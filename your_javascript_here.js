@@ -8,27 +8,25 @@ var hero = {
 // Game logic
 
 function rest(creature) {
-  var creature = {
-  name: "Veras",
-  heroic: false,
-  inventory: ['poison', 'knife', 'flashbang', 'smoke bomb'],
-  health: ++10,
-  weapon: { type: 'axe', damage: 2 }
-  }
-
-  return creature
+  creature.health = 10;
+  console.log('hozay!');
+  return creature;
 };
 
 function pickUpItem(creature, item) {
-  var creatureItem = {
-  inventory: ['poison', 'knife', 'flashbang', 'smoke bomb']
-  creature.inventory.push(grenade);
-  console.log(inventory)
-  }
-  return creature
+  creature.inventory.push(item);
+  console.log('hozay!');
+  return creature;
 };
 
+function dealDamage(attacker, defender) {
+  defender.health = attacker.health - attacker.damage
+  console.log('hozay!');
+};
 
+function equipWeapon(creature, index) {
+  creature.weapon = inventory.[index]
+}
 
 
 
