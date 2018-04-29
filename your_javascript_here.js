@@ -21,11 +21,12 @@ function rest(creature) {
 
 function pickUpItem(creature, item) {
   var creatureItem = {
-  item: creature.inventory.push("grenade");
+  inventory: ['poison', 'knife', 'flashbang', 'smoke bomb']
+  creature.inventory.push(grenade);
+  console.log(inventory)
   }
   return creature
 };
-
 
 
 
